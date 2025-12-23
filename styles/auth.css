@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,500,600,700|Poppins:400,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+.bg-img {
+  background: url("/public/2a4c044e0ad29c703759b887a378fcf1e955470a.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.bg-img-register {
+  background: url("/public/7029d8666a0bc64361956279c8e2ad111b7e1ee4.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.bg-img:after,
+.bg-img-register:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 999;
+  text-align: center;
+  padding: 40px 32px 40px 32px;
+  width: 500px;
+  height: auto;
+  min-height: auto;
+  max-height: none;
+  background: rgba(24, 26, 28, 0.8);
+  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  margin: auto;
+  overflow: visible;
+}
+
+.content header {
+  color: white;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: "Lato", sans-serif;
+}
+header h3 {
+  font-size: 28px;
+}
+header span {
+  font-size: 16px;
+}
+.content header i {
+  color: white;
+  font-size: 40px;
+  margin-right: 10px;
+}
+.field {
+  position: relative;
+  height: 45px;
+  width: 100%;
+}
+.field span {
+  color: #b2b0b0;
+  width: 40px;
+  line-height: 45px;
+}
+.field input {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border-radius: 24px;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  border: none;
+  background: #333;
+  color: white;
+}
+.field .show i {
+  color: #9d9ea1;
+  cursor: pointer;
+}
+.space {
+  margin-top: 16px;
+}
+.show,
+.show2 {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #ccc;
+}
+.show:hover,
+.show2:hover {
+  color: #fff;
+}
+.pass-key:valid ~ .show {
+  display: block;
+}
+.pass {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin: 10px 0;
+  color: rgba(255, 255, 255, 0.177);
+}
+.pass a {
+  color: rgba(255, 255, 255, 0.158);
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+.pass:hover a {
+  text-decoration: underline;
+  color: white;
+}
+.field input[type="submit"],
+.field button {
+  background: #3d4142;
+  border: 1px solid #3d4142;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  height: 100%;
+  width: 100%;
+  border-radius: 24px;
+  outline: none;
+  padding: 10px;
+}
+.field input[type="submit"]:hover,
+.field button:hover {
+  background: #3d4142;
+}
+.login {
+  color: white;
+  margin: 20px 0;
+  font-family: "Poppins", sans-serif;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  margin: 0 0 20px 0;
+}
+.google {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  margin-left: 10px;
+  background: #e7e3fc06;
+  border-radius: 24px;
+  border: 1px solid #e7e3fc3b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #3d4142;
+  background: transparent;
+  cursor: pointer;
+}
+.google i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.google:hover {
+  background: #3e61a8;
+}
+.instagram:hover {
+  background: #df2060;
+}
+.links i {
+  font-size: 17px;
+}
+i span {
+  margin-left: 8px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.signup {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.192);
+  font-family: "Poppins", sans-serif;
+}
+.signup a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.signup a:hover {
+  text-decoration: underline;
+}
+
+/* Button Group Styling */
+.button-group {
+  margin-top: 20px;
+}
+
+.btn-primary, .btn-google {
+  width: 100%;
+  height: 45px;
+  border-radius: 24px;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background: #3d4142;
+  border: 1px solid #3d4142;
+}
+
+.btn-primary:hover {
+  background: #505556;
+}
+
+.btn-google {
+  background: transparent;
+  border: 1px solid #3d4142;
+  
+}
+
+.btn-google:hover {
+  background: #3e61a8;
+}
+
+.separator {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  display: block;
+  text-align: center;
+  margin: 2px 2px;
+}
+
+.logo {
+  position: absolute;
+  left: 6.55%;
+  right: 8.33%;
+  top: 9.08%;
+  bottom: 8.33%;
+
+  background: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .bg-img, .bg-img-register {
+    min-height: 100vh;
+    background-attachment: scroll;
+  }
+  
+  .bg-img:after,
+  .bg-img-register:after {
+    position: absolute;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    width: 95%;
+    padding: 15px;
+    position: relative;
+  }
+  
+  .bg-img, .bg-img-register {
+    background-attachment: scroll;
+    min-height: 100vh;
+  }
+  
+  .content header {
+    margin: 0 0 25px 0;
+  }
+  
+  header h3 {
+    font-size: 24px;
+  }
+  
+  header span {
+    font-size: 14px;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 320px) {
+  .content {
+    width: 98%;
+    padding: 10px;
+  }
+  
+  header h3 {
+    font-size: 22px;
+  }
+}

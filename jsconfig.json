@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "lib": ["dom", "es2015"],
+    "allowJs": true,
+    "checkJs": false,
+    "noEmit": true,
+    "module": "esnext" 
+  },
+  "include": ["script/**/*.js"],
+  "typeAcquisition": {
+    "enable": true,
+    "include": ["jquery"]
+  }
+}

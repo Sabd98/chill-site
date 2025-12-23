@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chill - Movie Streaming Platform</title>
+    <link rel="stylesheet" href="/styles/app.css" />
+    <link rel="stylesheet" href="/styles/mobile.css" />
+    <link rel="stylesheet" href="/styles/grid.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="nav">
+          <nav class="nav-links">
+            <img src="/public/Logo.png" alt="Logo" />
+            <a href="#" class="nav-link">Series</a>
+            <a href="#" class="nav-link">Film</a>
+            <a href="#" class="nav-link">Daftar Saya</a>
+          </nav>
+          <div class="user-menu">
+            <div class="profile">
+              <img src="/public/Ellipse 395.png" alt="Profile" />
+              <i class="bx bx-chevron-down"></i>
+            </div>
+            <div class="dropdown" id="dropdown">
+              <a href="#"><i class="bx bx-user"></i> Profil Saya</a>
+              <a href="#"><i class="bx bx-star"></i> Ubah Premium</a>
+              <a href="index.html"><i class="bx bx-log-out"></i> Keluar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <main class="main-content">
+      <section class="hero">
+        <div class="hero-background">
+          <img src="/public/Hero.png" alt="Duty After School" />
+        </div>
+        <div class="hero-content">
+          <div class="container">
+            <div class="hero-info">
+              <h1 class="hero-title">Duty After School</h1>
+              <p class="hero-description">
+                Sebuah benda tak dikenal mengambil alih dunia. Dalam
+                keputusasaan, Departemen Pertahanan mulai merekrut siswa sekolah
+                menengah. Mereka pun segera menjadi pejuang garis depan dalam
+                perang.
+              </p>
+              <div class="hero-flex">
+                <div class="hero-buttons">
+                  <button class="btn btn-play">
+                    <i class="bx bx-play"></i>
+                    Mulai
+                  </button>
+                  <button class="btn btn-info">
+                    <i class="bx bx-info-circle"></i>
+                    Selengkapnya
+                  </button>
+                  <span class="age-rating">18+</span>
+                </div>
+                <button class="btn btn-volume">
+                  <i class="bx bx-volume-mute"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MOVIE SECTIONS -->
+      <section class="content-sections">
+        <div class="container">
+          <!-- CONTINUING TO WATCH -->
+          <div class="section" id="continuing-section">
+            <h2 class="section-title">Melanjutkan Tonton Film</h2>
+            <div class="carousel-container">
+              <button class="carousel-btn prev-btn">
+                <i class="bx bx-chevron-left"></i>
+              </button>
+              <div class="movie-row">
+              </div>
+              <button class="carousel-btn next-btn">
+                <i class="bx bx-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- TOP RATING -->
+          <div class="section" id="top-rating-section">
+            <h2 class="section-title">Top Rating Film dan Series Hari ini</h2>
+            <div class="carousel-container">
+              <button class="carousel-btn prev-btn">
+                <i class="bx bx-chevron-left"></i>
+              </button>
+              <div class="movie-row">
+                <!-- Movies will be populated by JavaScript -->
+              </div>
+              <button class="carousel-btn next-btn">
+                <i class="bx bx-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- FILM TRENDING -->
+          <div class="section" id="trending-section">
+            <h2 class="section-title">Film Trending</h2>
+            <div class="carousel-container">
+              <button class="carousel-btn prev-btn">
+                <i class="bx bx-chevron-left"></i>
+              </button>
+              <div class="movie-row">
+              </div>
+              <button class="carousel-btn next-btn">
+                <i class="bx bx-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- RILIS BARU -->
+          <div class="section" id="new-release-section">
+            <h2 class="section-title">Rilis Baru</h2>
+            <div class="carousel-container">
+              <button class="carousel-btn prev-btn">
+                <i class="bx bx-chevron-left"></i>
+              </button>
+              <div class="movie-row">
+                <!-- Movies will be populated by JavaScript -->
+              </div>
+              <button class="carousel-btn next-btn">
+                <i class="bx bx-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <img src="/public/Logo.png" alt="Logo" />
+            <p>©2023 Chill All Rights Reserved</p>
+          </div>
+          <div class="footer-sections">
+            <div class="footer-section">
+              <h4>Genre</h4>
+              <ul>
+                <li><a href="#">Aksi</a></li>
+                <li><a href="#">Anak-anak</a></li>
+                <li><a href="#">Anime</a></li>
+                <li><a href="#">Britania</a></li>
+                <li><a href="#">Komedi</a></li>
+                <li><a href="#">Petualangan</a></li>
+                <li><a href="#">Perang</a></li>
+                <li><a href="#">Romantis</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4></h4>
+              <ul>
+                <li><a href="#">Drama</a></li>
+                <li><a href="#">Fantasi Ilmiah & Fantasi</a></li>
+                <li><a href="#">Kejahatan</a></li>
+                <li><a href="#">KDrama</a></li>
+                <li><a href="#">Sains & Alam</a></li>
+                <li><a href="#">Thriller</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-right">
+            <h4>Bantuan</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Kontak Kami</a></li>
+              <li><a href="#">Privasi</a></li>
+              <li><a href="#">Syarat & Ketentuan</a></li>
+            </ul>
+          </div>
+
+          <!-- Mobile Accordion Footer -->
+          <div class="footer-mobile-accordion">
+            <div class="footer-accordion-item">
+              <button
+                class="footer-accordion-header"
+                onclick="toggleAccordion('genre')"
+              >
+                <span>Genre</span>
+                <span class="footer-accordion-arrow">❯</span>
+              </button>
+              <div class="footer-accordion-content" id="genre">
+                <ul>
+                  <li><a href="#">Aksi</a></li>
+                  <li><a href="#">Drama</a></li>
+                  <li><a href="#">Anak-anak</a></li>
+                  <li><a href="#">Fantasi Ilmiah & Fantasi</a></li>
+                  <li><a href="#">Anime</a></li>
+                  <li><a href="#">Kejahatan</a></li>
+                  <li><a href="#">Britania</a></li>
+                  <li><a href="#">KDrama</a></li>
+                  <li><a href="#">Komedi</a></li>
+                  <li><a href="#">Sains & Alam</a></li>
+                  <li><a href="#">Petualangan</a></li>
+                  <li><a href="#">Thriller</a></li>
+                  <li><a href="#">Perang</a></li>
+                  <li><a href="#">Romantis</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-accordion-item">
+              <button
+                class="footer-accordion-header"
+                onclick="toggleAccordion('bantuan')"
+              >
+                <span>Bantuan</span>
+                <span class="footer-accordion-arrow">❯</span>
+              </button>
+              <div class="footer-accordion-content bantuan" id="bantuan">
+                <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Kontak Kami</a></li>
+                  <li><a href="#">Privasi</a></li>
+                  <li><a href="#">Syarat & Ketentuan</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script/app.js"></script>
+    <script type="module" src="/script/card.js"></script>
+  </body>
+</html>
