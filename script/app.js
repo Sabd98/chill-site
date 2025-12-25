@@ -24,11 +24,11 @@ $(document).ready(() => {
   });
 
   // Hero action buttons
-  $(".btn-primary").click(() => {
+  $(".btn-play").click(() => {
     alert("Memulai film...");
   });
 
-  $(".btn-secondary").click(() => {
+  $(".btn-info").click(() => {
     alert("Menampilkan detail film...");
   });
 
